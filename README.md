@@ -30,5 +30,3 @@ yarn dev
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-
-![fistpage](https://user-images.githubusercontent.com/35114137/137740472-d13a217f-b7eb-4d87-972c-f61678e855c1.PNG)
