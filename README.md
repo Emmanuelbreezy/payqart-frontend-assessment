@@ -3,7 +3,7 @@
 # PayQart Frontend Assessment
 ----
 
-The application is built with [React/Next.js Framework](https://nextjs.org/) and Sass(Boostrap)
+The application is built with [React.js/Next.js Framework](https://nextjs.org/) and Sass(Boostrap)
 
 [PayQart Assessment Demo](https://payqart-frontend-assessment.vercel.app)
 
@@ -35,4 +35,5 @@ Click on the 'PREVIEW BUTTON' redirect to the order page - [PayQart Order Page](
 ![orderpage](https://user-images.githubusercontent.com/35114137/140327648-c28d15c6-0c0f-4753-8040-a2d25e93a771.PNG)
 
 
+Done!!
 
