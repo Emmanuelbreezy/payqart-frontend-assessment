@@ -5,7 +5,7 @@
 
 The application is built with [React/Next.js Framework](https://nextjs.org/) and Sass(Boostrap)
 
-[PayQart Demo](https://paddle-frontend-assessment.vercel.app/homepage)
+[PayQart Assessment Demo](https://paddle-frontend-assessment.vercel.app/homepage)
 
 ## Libraries used
 
