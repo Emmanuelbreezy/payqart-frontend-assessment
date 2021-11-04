@@ -23,11 +23,14 @@ export default function WorkingType({employmentType,setEmploymentType,salaryEarn
             <input className="form-control shadow-sm py-2 " ref={ref} 
                     value={value} type="button"  
             />
-            <div className="position-absolute top-50  translate-middle-y " style={{left:"2%"}}><svg className="cursor-pointer"  style={{width:"20px", height:"18px",cursor:"pointer"}}  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></div>
+            <div className="position-absolute top-50  translate-middle-y " style={{left:"2%"}}><svg  style={{width:"20px", height:"18px",cursor:"pointer"}}  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></div>
             <div className="position-absolute top-50 start-50  translate-middle "><span style={{cursor:"pointer"}}>{salaryDate === 0 && "Select pay date"}</span></div>
             <div className="position-absolute top-50  translate-middle-y " style={{right:"2%"}}> <svg  style={{float:"right",cursor:"pointer"}} xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
        </div>
     ));
+
+    CustomDateInput.displayName = "CustomDateInput";
+
     return (
         <div className="pq-multibar--content">
           <div>

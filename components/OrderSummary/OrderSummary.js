@@ -67,7 +67,7 @@ export default function OrderSummary({totalCartVal}) {
                                              </div>
                                              <div className="col-8 col-lg-7 pq-c-list--ul">
                                                  <ul>
-                                                     <li><span>Men's Long Sleeve Shirt </span></li>
+                                                     <li><span>Men Long Sleeve Shirt </span></li>
                                                      <li className="d-flex align-items-center">
                                                        <svg className="pq-txtsvg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
                                                             viewBox="0 0 496.262 496.262" >
