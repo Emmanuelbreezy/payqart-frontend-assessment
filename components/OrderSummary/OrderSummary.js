@@ -20,7 +20,7 @@ export default function OrderSummary({totalCartVal}) {
                                          <a className="pq-card--items">
                                              <div className="col-3 col-lg-5 pq-c-img-wrap">
                                                 <div className="pq-c-img">
-                                                    <Image src={phone} height="" placeholder="blur" />
+                                                    <Image src={phone} height="" placeholder="blur" alt=""/>
                                                 </div> 
                                              </div>
                                              <div className="col-8 col-lg-7 pq-c-list--ul">
@@ -62,7 +62,7 @@ export default function OrderSummary({totalCartVal}) {
                                      <a className="pq-card--items pt-2">
                                              <div className="col-3 col-lg-5 pq-c-img-wrap">
                                                  <div className="pq-c-img">
-                                                     <Image src={shirt} height="" placeholder="blur" />
+                                                     <Image src={shirt} height="" placeholder="blur" alt="" />
                                                  </div>
                                              </div>
                                              <div className="col-8 col-lg-7 pq-c-list--ul">

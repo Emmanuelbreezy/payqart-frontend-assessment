@@ -125,7 +125,6 @@ export default function OrderApproval({employmentType,
                                                setChangeDownPay={setChangeDownPay}
                                                monthInstall={monthInstall}
                                                currentTenure={currentTenure}
-                                               setCurrentTenure={setCurrentTenure}
                                                handleNext={handleNext}
 
                                                handleLoanCalculation={handleLoanCalculation}
