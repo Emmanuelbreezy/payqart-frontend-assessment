@@ -1,3 +1,5 @@
+![payqart](https://user-images.githubusercontent.com/35114137/140321563-8c781f29-baf5-44cd-abfc-5c86a56fd860.jpg)
+
 # PayQart Frontend Assessment
 ----
 
@@ -17,7 +19,7 @@ The application is built with [React/Next.js Framework](https://nextjs.org/) and
 First, clone the repository:
 
 ```bash
-  git clone https://github.com/Emmanuelbreezy/paddle-frontend-assessment.git
+  git clone https://github.com/Emmanuelbreezy/payqart-frontend-assessment.git
 ```
 run the development server:
 
