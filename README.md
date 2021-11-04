@@ -34,6 +34,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 Click on the 'PREVIEW BUTTON' redirect to the order page - [PayQart Order Page](https://payqart-frontend-assessment.vercel.app/order)
 ![orderpage](https://user-images.githubusercontent.com/35114137/140327648-c28d15c6-0c0f-4753-8040-a2d25e93a771.PNG)
 
+Plans Step - 
+![plans](https://user-images.githubusercontent.com/35114137/140428501-db80b077-239e-4086-a748-ef7f1251bdf8.PNG)
+
+
 
 Done!!
 
