@@ -1,0 +1,22 @@
+@use '../vendor/boostrap' as *;
+@use '../theme/app-theme'  as *; 
+
+
+.pq-main--layout{
+    height: 100%;
+    overflow:visible;
+
+    @include media-breakpoint-up(lg){
+        height: 100vh;
+        overflow:hidden;
+    }
+
+    .pq--wrapper{
+        display: block;
+
+        @include media-breakpoint-up(lg){
+            display: flex;
+            align-items: center;
+        }
+    }
+}

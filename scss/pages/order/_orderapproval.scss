@@ -1,0 +1,367 @@
+@use '../../vendor/boostrap' as *;
+@use '../../theme/app-theme'  as *; 
+@use '../../abstract/mixins'  as *; 
+
+a{
+    text-decoration: none;
+}
+
+.pq-order--approval{
+    height: 100%;
+    overflow:hidden;
+
+    @include media-breakpoint-up(lg){
+        height: 100vh;
+        overflow-x:hidden;
+        overflow-y:auto;
+    }
+
+    .pq--overflow-scroll{
+        width: 100%;
+        height: 100%;
+
+
+    .container{
+        margin:0 auto;
+        padding: 0 2.5rem;
+
+        .pq-mul--top{
+            padding-top: 2rem;
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .pq--steps--back{
+            position: absolute;
+            top: 70%;
+            left: -38%;
+            
+            a{
+                color: var(--primary-color);
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                font-weight: 500;
+                cursor: pointer;
+
+
+                    svg{
+                        width: 20px;
+                        height: 20px;
+                        stroke: var(--primary-color);
+                        margin-right: 0.1rem;
+                    }
+
+                    &:hover{
+                        opacity: 0.7;
+                    }
+            }
+        }
+
+        .pq-multibar--content{
+            padding-top: 2rem;
+
+            .pq--card-approval{
+                .card{
+                    border: none;
+                    text-decoration: none;
+                    cursor: pointer;
+
+                   
+                    
+                    .card-body{
+                        .pq-card--topcard{
+                            @extend .shadow;
+                            width: 100%;
+                            height: 100px;
+                            border-radius: 15px;
+                            margin-bottom: 0.8rem;
+                            overflow:hidden;
+                            
+                            
+                            img{
+                                border-radius: 15px;
+                                filter:brightness(1.0)
+                            }
+
+                            &:hover{
+                                @include transitionProperty;
+                                @extend .shadow-lg;
+                                transform: scale(1.1);
+
+                            }
+
+
+
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .pq-paid--employment{
+
+            .form-group{
+
+                .pq-form--select{
+                    input{
+                        color: var(--secondary-color) !important;
+                        font-weight: 490;
+                    }
+                    svg{
+                        width: 20px;
+                        height: 20px;
+                        stroke: var(--secondary-color);
+                    }
+
+                    span{
+                        font-size:14.5px;
+                        color: var(--secondary-color);
+                        font-weight:500;
+                    }
+                    
+                }
+                     
+                .border-right{
+                   border-right: 1px solid $gray-400;
+                }
+
+                .form-control{
+                    border: none;
+                    
+
+                }
+                .pq--check-sel{
+
+                    .pq-col-center{
+                        
+                        .form-check{
+                            display: flex;
+                            align-items: center;
+                            width: 40%;
+                            margin: 0 auto;
+
+                            label{
+                                margin-left: 0.6rem;
+                                font-size: 17px;
+                                cursor:pointer;
+                            }
+
+                            input {
+                                cursor:pointer;
+
+                            }
+
+                           
+                        }
+                    }
+                }
+            }
+        }
+
+        .pq-btn--container{
+            display: flex;
+            justify-content: center;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        .pq-multibar-plan-content{
+            padding-top: 2rem;
+
+
+            .pq--plans-card{
+                padding-left: 0;
+                padding-right: 0.5rem;
+
+                
+
+                .card{
+                    @extend .shadow;
+                    border:none;
+                    cursor: pointer;
+                    border-radius: 15px;
+                    text-decoration: none;
+                    
+                    .card-body{
+                        padding:0;
+
+                        .card--active-plans{
+                            @include gradient;
+                            position: absolute;
+                            width: 90%;
+                            height: 95%;
+                            top:3%;
+                            padding-top: 0.5rem;
+                            margin: 0 auto;
+                            z-index: 1;
+                            border-radius: 15px;
+                        }
+
+                        .--plan-txtcolor{
+                            color: $white!important;
+                        }
+                        
+                        .pq-card-bar{
+                            border-top-left-radius: 15px;
+                            border-top-right-radius: 15px;
+                            width: 100%;
+                            height: 15px;
+                        }
+
+                        .pq--bar1{background-color: #ff5151;}
+                        .pq--bar2{background-color: #ff51f3;}
+                        .pq--bar3{background-color: #6751ff;}
+                        .pq--bar4{background-color: #51ffed;}
+                        .pq--bar5{background-color: #ffae51;}
+                        .pq--bar6{background-color: #6dff51;}
+
+                        .pq-card-content{
+                            width: 100%;
+                            height: 82px;
+                            padding: 0.2rem 0.2rem 0.1rem 0.2rem;
+                            text-align: center;
+                              
+                            .display-h4{
+                                font-size: 3rem;
+                                margin: 0!important;
+                                padding: 0!important;
+                                line-height: 2.2rem;
+                                color: var(--secondary-color);
+
+                            }
+                            span{
+                                display: block;
+                                margin: 0;
+                                color: var(--secondary-color);
+                            }
+                        }
+                    }
+
+                    &:hover{
+                        transform: scale(1.1);
+                        @include transitionProperty;
+
+                    }
+                }
+            }
+            
+            //PAYMENT BREAKDOWN
+            .pq-payment--bd{
+                padding-top: 1rem;
+
+                .pq-bd--wrapper{
+
+                    .card{
+                        @extend .shadow;
+                        border-radius: 15px;
+                        border: none;
+
+                        .card-body{
+                            padding: 0;
+
+                            .pq-bd--leftside{
+                                padding: 2rem 0 1.5rem 0.5rem;
+
+                                .pq--bd-borderR{
+                                    border-right: 1px solid $gray-300;
+                                }
+
+                                ul{
+                                    list-style: none;
+                                    padding-bottom: 0;
+
+                                    li{
+                                        line-height: 2rem;
+                                    }
+
+                                }
+
+                                .pq--bd-ul1{
+                                    ul{
+                                       li{
+                                           span{
+                                               color: var(--secondary-color);
+                                               font-weight: 490;
+                                           }
+
+                                       }
+                                    }
+                                    
+                                }
+
+                                .pq--bd-ul_2{
+
+                                    ul{
+                                      li{
+                                          svg{
+                                              fill: var(--secondary-color);
+                                          }
+                                          span{
+                                              color: var(--secondary-color);
+                                              font-weight: bold!important;
+                                          }
+                                      }
+                                    }
+                                }
+
+
+                               
+                            }
+
+                            .pq-bd-rightside{
+                                
+                                .card{
+                                    @extend .shadow-sm;
+                                    @include gradient;
+                                    height: 100%;
+
+                                    .card-body{
+                                        width: 100%;
+                                       padding: 0.2rem;
+                                       padding-bottom: 1rem;
+
+                                        .pq-container{
+                                            width: 90%;
+                                            padding-top: 1.5rem;
+                                            padding-left: 0.2rem;
+                                            margin: 0 auto;
+
+                                            h5{
+                                                line-height: 1rem;
+                                                font-weight: 400;
+                                                font-size: 15px;
+                                                color: $white;
+                                            }
+
+                                            .form-group{
+                                                padding-bottom: 1rem;
+                                                .input-group{
+                                                    .input-group-text{
+                                                        border-radius: 0!important;
+                                                        background-color: var(--accent-color)!important;
+                                                        svg{
+                                                            fill:var(--secondary-color);                                                        }
+                                                    }
+                                                    input{
+                                                        border-radius: 0!important;
+                                                        color: var(--secondary-color);
+                                                        font-weight: 500;
+                                                        font-size: 17px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    }
+}

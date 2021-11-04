@@ -1,0 +1,44 @@
+@use '../vendor/boostrap' as *;
+
+
+:root{
+    --body-bg-color: #fff;
+    --sidebar-bg-color:rgba(219, 31, 125, 0.685);
+    --ordersummary-bg-color:#eeeeee;
+    --primary-color: #ff005e;
+    --secondary-color:#a5057d;
+    --accent-color:#fff;
+    --inactive-anchor-color:#d69cc8;
+    --text-color: rgb(255, 254, 254);
+}
+
+body{
+   overflow-x: hidden;
+   padding: 0;
+   margin: 0;
+   background-color: var(--body-bg-color);
+}
+
+
+.loader--center{
+    position: absolute;
+    left: 40%;
+    top:40%;
+
+    h2{
+        letter-spacing: 4px;
+    }
+    
+    span{
+        letter-spacing: 5px;
+    }
+   
+}
+
+.__center__div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+

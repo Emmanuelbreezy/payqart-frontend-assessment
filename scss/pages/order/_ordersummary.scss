@@ -1,0 +1,120 @@
+@use '../../vendor/boostrap' as *;
+@use '../../theme/app-theme'  as *; 
+
+
+.pq-order--summary{
+
+    height: 100%;
+    background-color: var(--ordersummary-bg-color);
+
+    @include media-breakpoint-up(lg){
+        height: 100vh;
+    }
+
+    .container{
+        padding: 0 2rem;
+
+        .pq--content{
+            padding-top: 2.5rem;
+
+            .pq-content-head{
+                font-size: 14px;
+                text-transform: uppercase;
+                color: rgb(156, 155, 155);
+            }
+
+            .card{
+                @extend .shadow;
+                border-radius: 10px!important;
+
+                .pq-card--list{
+                    padding-bottom: 1.5rem;
+
+                    .pq-card--items{
+                        display: flex;
+                        align-items: center;
+                        margin-top: 0.5rem;
+                        text-decoration: none;
+                        cursor: pointer;
+
+                        &:hover{
+                            background-color: $gray-100;
+                        }
+
+                        .pq-c-img-wrap{
+                              
+
+                            .pq-c-img{
+                                @extend .shadow-sm;
+                                height: 100px;
+                                margin-right: 0.5rem;
+                                width: 80px;
+                                height: 80px;
+
+                                img{
+                                    height: 100%;
+                                }
+                            }
+                        }
+
+                        .pq-c-list--ul{
+                            
+                            ul{
+                                padding: 0;
+                                margin: 0;
+                                list-style: none;
+
+                                li{
+                                    line-height: 1.2rem;
+
+                                    .pq-txtsvg{
+                                        width: 11px;
+                                        height: 11px;
+                                       fill: $gray-600;
+                                       margin-right: 0.1rem;
+                                    }
+                                    span{
+                                        font-size: 13px;
+                                        color: $gray-600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .pq-card--wrap{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-top: 0.5rem ;
+                    padding-bottom: 0.5rem ;
+
+                    .pq-card--txthead{
+                        font-size: 13.5px;
+                        color: rgb(180, 176, 176);
+                        font-weight: 400;
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    .pq-card--txtsvg{
+                        width: 12px;
+                        height: 15px;
+                       fill: $black;
+                        
+                    }
+
+                    .pq-card--txtprice{
+                       font-weight: 500;
+                       color: $black;
+
+                    }
+                }
+            }
+
+            
+        }
+    }
+
+}

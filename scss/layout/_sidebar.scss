@@ -1,0 +1,98 @@
+@use '../vendor/boostrap' as *;
+@use '../theme/app-theme'  as *; 
+
+
+
+.pq-sideb--wrap{
+    position: relative;
+    height: 500px;
+    background: url('../../public/assets/image/woman-shopping.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include media-breakpoint-up(lg){
+        height: 100vh;
+    }
+    
+    
+    .pq-sideb--overall{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--sidebar-bg-color);
+
+
+    }
+    .container{
+        padding: 0 2rem;
+
+        .pq--back-link{
+            padding-top: 2.5rem;
+            
+            a{
+                color: $white;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                font-weight: 490;
+                cursor: pointer;
+
+
+
+                svg{
+                    width: 20px;
+                    height: 20px;
+                   stroke: $white;
+                   margin-right: 0.1rem;
+                }
+
+                &:hover{
+                   color: $gray-200;
+                }
+            }
+        }
+
+
+        .pq--image-wrapper{
+             position: absolute;
+             top:40%;
+             width: 80%;
+
+             img{
+                 width: 100%!important;
+                 filter: brightness(0) invert(1);
+             }
+        }
+
+        .pq--listing-ul{
+            position: absolute;
+            bottom: 5%;
+
+            ul{
+                list-style: none;
+                padding: 0;
+
+                li{
+                    display: flex;
+                    align-items: center;
+
+                    .pq-round--shape{
+                       width: 5px;
+                       height: 5px;
+                       background-color: $white;
+                       border-radius: 50%;
+                       display: block;
+                       margin-right: 0.255rem;
+                    }
+
+                    .pq--listing-span{
+                        font-size: 13px;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@use '../vendor/boostrap' as *;
+@use '../theme/app-theme'  as *; 
+
+
+
+.display-4{
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0.8rem;
+    color: var(--secondary-color);
+}
+
+.display--span{
+    font-size: 13.5px;
+    color: var(--inactive-anchor-color);
+    font-weight: 500;
+}
+
+.display-active{
+    color: var(--secondary-color) !important;
+}
+
+.display--label{
+    font-size: 18px;
+    color: var(--secondary-color);
+    font-size: 400;
+}
